@@ -1,3 +1,12 @@
+<%--编写一个Tag文件：GetArea.tag负责求出三角形的面积，--%>
+<%--并使用variable指令返回三角形的面积给调用该Tag文件的JSP页面。--%>
+<%--JSP页面负责显示Tag文件返回的三角形的面积。JSP在调用Tag文件时，--%>
+<%--使用attribute指令将三角形三边的长度传递给Tag文件。--%>
+<%--one.jsp和two.jsp都使用Tag标记调用GetArea.tag。--%>
+<%--one.jsp返回的三角形的面积保留最多3位小数，--%>
+<%--two.jsp返回的三角形的面积保留最多6位小数。--%>
+
+
 <%@ page contentType="text/html; charset=UTF-8" %>
 <%@ page import="java.text.*" %>
 <%@ taglib tagdir="/WEB-INF/tags" prefix="computer" %>
