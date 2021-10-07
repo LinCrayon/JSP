@@ -13,7 +13,7 @@
     application.setAttribute("hitCounter", hitsCount);
 %>
 
-<p>你是第个 <%= hitsCount%>访问! </p>
+<p>你是第<%= hitsCount%>个访问! </p>
 
 </body>
 </html>
