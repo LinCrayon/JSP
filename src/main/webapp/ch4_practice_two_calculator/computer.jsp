@@ -1,7 +1,7 @@
 <%@ page contentType="text/html" %>
 <%@ page pageEncoding = "utf-8" %>
 <HTML><body bgcolor = cyan>
-<p style="font-family:宋体;font-size:18;color:black">
+<p style="font-family:宋体;font-size:18px;color:black">
         <%
    String numberOne=request.getParameter("numberOne");
    String numberTwo=request.getParameter("numberTwo");

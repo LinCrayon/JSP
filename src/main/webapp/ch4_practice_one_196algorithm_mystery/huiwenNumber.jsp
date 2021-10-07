@@ -2,7 +2,7 @@
 <%@ page pageEncoding = "utf-8" %>
 <%@ page import = "java.math.BigInteger" %>
 <HTML><body bgcolor = cyan>
-<p style="font-family:宋体;font-size:36;color:black">
+<p style="font-family:宋体;font-size:36px;color:black">
     <%!
         public static String reverse(String s) {
             StringBuffer  buffer = new StringBuffer(s);

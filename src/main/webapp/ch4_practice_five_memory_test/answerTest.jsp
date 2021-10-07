@@ -3,7 +3,7 @@
 <HTML><body bgcolor = #ffccff>
 <style>
     #textStyle{
-        font-family:宋体;font-size:26;color:blue
+        font-family:宋体;font-size:26px;color:blue
     }
 </style>
 <form action="judgeAnswer.jsp" id = textStyle method=post >

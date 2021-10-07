@@ -2,7 +2,7 @@
 <%@ page pageEncoding = "utf-8" %>
 <style>
     #tomStyle{
-        font-family:宋体;font-size:36;color:blue
+        font-family:宋体;font-size:36px;color:blue
     }
 </style>
 <HTML><body id=tomStyle bgcolor = #ffccff>

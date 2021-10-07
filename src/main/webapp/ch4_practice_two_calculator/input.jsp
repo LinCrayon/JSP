@@ -2,7 +2,7 @@
 <%@ page pageEncoding = "utf-8" %>
 <HTML><body bgcolor = #ffccff>
 <form action="computer.jsp" method=post name=form>
-    <p style="font-family:宋体;font-size:18;color:blue">
+    <p style="font-family:宋体;font-size:18px;color:blue">
         输入运算数、选择运算符号:<br>
         <input type=text name="numberOne" size=6/>
         <select name="operator" >
@@ -14,4 +14,4 @@
         <input type=text name="numberTwo"  size=6 />
         <br><input type="submit" name="submit" value="提交" />
 </form>
-</p></body></HTML>
+</body></HTML>

@@ -1,7 +1,7 @@
 <%@ page contentType="text/html" %>
 <%@ page pageEncoding = "utf-8" %>
 <HTML><body bgcolor = white >
-<p style="font-family:宋体;font-size:26;color:blue">
+<p style="font-family:宋体;font-size:26px;color:blue">
     <%   session.setAttribute ("yesORNo" ,"no");
         request.setCharacterEncoding("utf-8");
         int n =Integer.parseInt((String)session.getAttribute ("grade"));

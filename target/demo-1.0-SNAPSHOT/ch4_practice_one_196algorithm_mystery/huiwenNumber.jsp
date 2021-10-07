@@ -2,9 +2,9 @@
 <%@ page pageEncoding = "utf-8" %>
 <%@ page import = "java.math.BigInteger" %>
 <HTML><body bgcolor = cyan>
-<p style="font-family:宋体;font-size:36;color:black">
+<p style="font-family:宋体;font-size:36px;color:black">
     <%!
-        public static String reverse(String s) {  //定义方法返回参数的反序。
+        public static String reverse(String s) {
             StringBuffer  buffer = new StringBuffer(s);
             StringBuffer  reverseBuffer = buffer.reverse();
             return  reverseBuffer.toString();
@@ -22,11 +22,11 @@
         }
         long step = 1;
         BigInteger number = new  BigInteger(startNumber);
-        BigInteger reverseNumber = new BigInteger(reverse(number.toString())); //反序后的数。
+        BigInteger reverseNumber = new BigInteger(reverse(number.toString()));
         BigInteger resultNumber = number.add(reverseNumber);
         out.print("<br>"+number+"+"+reverseNumber+"="+resultNumber);
-        BigInteger p = new BigInteger(reverse(resultNumber.toString()));  //二者和的结果的反序。
-        while(!resultNumber.equals(p)) {   //判断是否是回文数。
+        BigInteger p = new BigInteger(reverse(resultNumber.toString()));
+        while(!resultNumber.equals(p)) {
             number = new  BigInteger(resultNumber.toString());
             reverseNumber = new  BigInteger(reverse(number.toString()));
             resultNumber = number.add(reverseNumber);
