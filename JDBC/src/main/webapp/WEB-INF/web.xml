@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"  ?>
+<web-app>
+    <servlet>
+        <servlet-name>hello</servlet-name>
+        <servlet-class>com.moon.sun.Example6_1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>hello</servlet-name>
+        <url-pattern>/lookHello</url-pattern>
+    </servlet-mapping>
+
+        <servlet>
+            <servlet-name>drawCircle</servlet-name>
+            <servlet-class>com.moon.sun.DrawCircle_Servlet</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>drawCircle</servlet-name>
+            <url-pattern>/drawCircle</url-pattern>
+        </servlet-mapping>
+
+</web-app>

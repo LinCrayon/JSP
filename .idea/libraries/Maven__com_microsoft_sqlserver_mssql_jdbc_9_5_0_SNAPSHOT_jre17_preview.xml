@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.microsoft.sqlserver:mssql-jdbc:9.5.0-SNAPSHOT.jre17-preview">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../Environment/maven-3.8.3/maven-repo/com/microsoft/sqlserver/mssql-jdbc/9.5.0-SNAPSHOT.jre17-preview/mssql-jdbc-9.5.0-SNAPSHOT.jre17-preview.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../Environment/maven-3.8.3/maven-repo/com/microsoft/sqlserver/mssql-jdbc/9.5.0-SNAPSHOT.jre17-preview/mssql-jdbc-9.5.0-SNAPSHOT.jre17-preview-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../Environment/maven-3.8.3/maven-repo/com/microsoft/sqlserver/mssql-jdbc/9.5.0-SNAPSHOT.jre17-preview/mssql-jdbc-9.5.0-SNAPSHOT.jre17-preview-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
