@@ -9,6 +9,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="MyBatis" />
         <module name="JDBC" />
+        <module name="SpringMVC" />
+        <module name="SpringBoot" />
         <module name="redis" />
         <module name="JSP" />
       </profile>
@@ -19,6 +21,13 @@
       <module name="JSP" target="1.7" />
       <module name="MyBatis" target="8" />
       <module name="redis" target="8" />
+      <module name="SpringBoot" target="1.8" />
+      <module name="SpringMVC" target="8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="SpringBoot" options="-parameters" />
+    </option>
   </component>
 </project>

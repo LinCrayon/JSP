@@ -1,9 +1,0 @@
-package com.lsq.mapper;
-
-import com.lsq.pojo.User;
-
-import java.util.List;
-
-public interface UserMapper {
-    List<User> selectUser();
-}

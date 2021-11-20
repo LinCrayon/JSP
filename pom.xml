@@ -14,6 +14,7 @@
     <module>redis</module>
       <module>JDBC</module>
       <module>JSP</module>
+      <module>SpringMVC</module>
   </modules>
 
 
@@ -47,16 +48,11 @@
       <artifactId>mybatis</artifactId>
       <version>3.5.2</version>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
+<!--    redis-->
     <dependency>
       <groupId>redis.clients</groupId>
       <artifactId>jedis</artifactId>
       <version>3.7.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-api</artifactId>
-      <version>1.7.5</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
@@ -76,6 +72,13 @@
       <artifactId>mssql-jdbc</artifactId>
       <version>9.5.0-SNAPSHOT.jre17-preview</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc -->
+    <dependency>
+      <groupId>com.microsoft.sqlserver</groupId>
+      <artifactId>mssql-jdbc</artifactId>
+      <version>6.2.1.jre8</version>
+    </dependency>
+
 
     <dependency>
       <groupId>org.projectlombok</groupId>
@@ -83,6 +86,37 @@
       <version>1.16.18</version>
       <scope>provided</scope>
     </dependency>
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.20</version>
+    </dependency>
+    <!--springmvc-->
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.12</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-webmvc</artifactId>
+        <version>5.1.9.RELEASE</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>servlet-api</artifactId>
+        <version>2.5</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.servlet.jsp</groupId>
+        <artifactId>jsp-api</artifactId>
+        <version>2.2</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>jstl</artifactId>
+        <version>1.2</version>
+      </dependency>
 
   </dependencies>
 
@@ -96,7 +130,7 @@
           <include>**/*.properties</include>
           <include>**/*.xml</include>
         </includes>
-        <filtering>false</filtering>
+        <filtering>true</filtering>
       </resource>
       <resource>
         <directory>src/main/resources</directory>
@@ -104,7 +138,7 @@
           <include>**/*.properties</include>
           <include>**/*.xml</include>
         </includes>
-        <filtering>false</filtering>
+        <filtering>true</filtering>
       </resource>
     </resources>
   </build>

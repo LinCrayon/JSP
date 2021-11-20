@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="JDBC">
+    <output-path>$PROJECT_DIR$/out/artifacts/JDBC</output-path>
+    <root id="root">
+      <element id="archive" name="JDBC.jar">
+        <element id="module-output" name="JDBC" />
+      </element>
+    </root>
+  </artifact>
+</component>
