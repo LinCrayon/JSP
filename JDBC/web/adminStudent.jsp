@@ -34,6 +34,7 @@
     String english = request.getParameter("englishScore");
     try{
         if(mess.contains("查看")){
+            assert con != null;
             pre = con.prepareStatement(querySQL);
             pre.setString(1,id);
             rs = pre.executeQuery();
@@ -68,7 +69,7 @@
             pre.executeUpdate();
             out.print("<h3>删除成功</h3>");
         }
-        con.close();//连接放回连接池。
+
     }
     catch(SQLException e) {
         out.print("<h1>学号不能重复");
