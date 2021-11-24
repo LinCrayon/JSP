@@ -48,8 +48,8 @@
         else if(mess.contains("更新")){
             pre = con.prepareStatement(updateSQL);
             pre.setString(1,name);
-            pre.setInt(2,Integer.parseInt(math));
-            pre.setInt(3,Integer.parseInt(english));
+            pre.setInt(2, int parseInt(math));
+            pre.setInt(3,int.parseInt(english));
             pre.setString(4,id);
             pre.executeUpdate();
             out.print("<h3>更新成功</h3>");
@@ -58,8 +58,8 @@
             pre = con.prepareStatement(insertSQL);
             pre.setString(1,id);
             pre.setString(2,name);
-            pre.setInt(3,Integer.parseInt(math));
-            pre.setInt(4,Integer.parseInt(english));
+            pre.setInt(3,int.parseInt(math));
+            pre.setInt(4,int.parseInt(english));
             pre.executeUpdate();
             out.print("<h3>添加成功</h3>");
         }
