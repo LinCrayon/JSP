@@ -5,12 +5,13 @@
          version="4.0">
     <servlet>
         <servlet-name>hello</servlet-name>
-        <servlet-class>HelloServlet</servlet-class>
+        <servlet-class>com.lsq.servlet.HelloServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>hello</servlet-name>
         <url-pattern>/hello</url-pattern>
     </servlet-mapping>
+
 
 
 </web-app>

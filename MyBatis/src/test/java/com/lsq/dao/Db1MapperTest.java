@@ -27,10 +27,8 @@ public class Db1MapperTest {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            //关闭SqlSession
             sqlSession.close();
         }
-
     }
 
     @Test
