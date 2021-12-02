@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="1f5e0626-58be-4e20-a5f7-f0824f040bb5" name="docker" url="http://121.43.177.234:8998">
+        <fileTransfer rootFolder="/root" accessType="SFTP" host="121.43.177.234" port="22" sshConfigId="10a600e3-4bea-47cd-a571-aef11dbb4207" sshConfig="aliyun服务器">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

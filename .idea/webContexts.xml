@@ -4,8 +4,10 @@
     <option name="state">
       <map>
         <entry key="file://$PROJECT_DIR$/JDBC/web/adminStudent.jsp" value="file://$PROJECT_DIR$/JDBC/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/JDBC/web/example8_8_input.jsp" value="file://$PROJECT_DIR$/JDBC/web" />
         <entry key="file://$PROJECT_DIR$/JSP/web/WEB-INF/Test/queryShow.jsp" value="file://$PROJECT_DIR$/JSP/web/WEB-INF/Test" />
         <entry key="file://$PROJECT_DIR$/JSP/web/WEB-INF/queryShow.jsp" value="file://$PROJECT_DIR$/JSP/web/WEB-INF" />
+        <entry key="file://$PROJECT_DIR$/SpringMVC/web/example7_1.jsp" value="file://$PROJECT_DIR$/SpringMVC/web" />
       </map>
     </option>
   </component>
