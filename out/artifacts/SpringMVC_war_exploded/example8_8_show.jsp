@@ -6,7 +6,7 @@
     }
 </style>
 <jsp:useBean id="recordBean" class="save.data.Record_Bean" scope="session"/>
-<HTML><body ><center>
+<HTML><body  bgcolor="black"><center>
     <jsp:setProperty name="recordBean" property="pageSize" param="pageSize"/>
     <jsp:setProperty name="recordBean" property="currentPage" param="currentPage"/>
     <table id =tom border=1>
@@ -19,8 +19,8 @@
             String []columnName=recordBean.getColumnName();
             if(columnName!=null) {
                 out.print("<tr>");
-                for(int i=0;i<columnName.length;i++){
-                    out.print("<th>"+columnName[i]+"</th>");
+                for (String s : columnName) {
+                    out.print("<th>" + s + "</th>");
                 }
                 out.print("</tr>");
             }

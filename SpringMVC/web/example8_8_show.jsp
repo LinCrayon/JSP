@@ -6,7 +6,7 @@
     }
 </style>
 <jsp:useBean id="recordBean" class="save.data.Record_Bean" scope="session"/>
-<HTML><body ><center>
+<HTML><body  bgcolor="black"><center>
     <jsp:setProperty name="recordBean" property="pageSize" param="pageSize"/>
     <jsp:setProperty name="recordBean" property="currentPage" param="currentPage"/>
     <table id =tom border=1>
