@@ -13,6 +13,8 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.RandomAccessFile;
+import java.nio.charset.StandardCharsets;
+
 public class Example9_4_Servlet extends HttpServlet{
     @Override
     public void init(ServletConfig config) throws ServletException{
@@ -35,11 +37,13 @@ public class Example9_4_Servlet extends HttpServlet{
             String path = f.getAbsolutePath();
             int index = path.indexOf("bin");
             String tomcatDir = path.substring(0,index);//tomcat的安装目录。
+            System.out.println(tomcatDir);
             //文件上传到image文件夹中：
             File dir=new File(tomcatDir+"/webapps/"+webDir+"/image");
             dir.mkdir();//建立目录。
             File fileTemp=new File(dir,tempFileName); //建立临时文件fileTemp
             RandomAccessFile randomWrite = new RandomAccessFile(fileTemp,"rw");
+            System.out.println(dir);
             //将客户上传的全部信息存入fileTemp：
             InputStream in=request.getInputStream();
             byte b[]=new byte[10000];
@@ -73,8 +77,8 @@ public class Example9_4_Servlet extends HttpServlet{
                 }
             }
             //根据客户上传文件的名字，将该文件存入磁盘:
-            byte  cc[]=fileName.getBytes("iso-8859-1");
-            fileName=new String(cc,"utf-8");
+            byte[] cc =fileName.getBytes(StandardCharsets.ISO_8859_1);
+            fileName=new String(cc, StandardCharsets.UTF_8);
             File fileUser= new File(dir,fileName);
             randomWrite = new RandomAccessFile(fileUser,"rw");
             //确定出文件fileTemp中包含客户上传的文件的内容的最后位置，即倒数第6行
@@ -107,7 +111,7 @@ public class Example9_4_Servlet extends HttpServlet{
             fileTemp.delete(); //删除临时文件
         }
         catch(Exception ee) {
-            fileBean.setMess("没有选择文件或上传失败");
+            fileBean.setMess("上传失败");
         }
         RequestDispatcher dispatcher=
                 request.getRequestDispatcher("example9_4.jsp");
