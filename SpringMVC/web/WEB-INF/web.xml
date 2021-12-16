@@ -1,82 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<web-app
-
-
-         version="4.0">
-    <servlet>
-        <servlet-name>hello</servlet-name>
-        <servlet-class>com.lsq.servlet.HelloServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>hello</servlet-name>
-        <url-pattern>/hello</url-pattern>
-    </servlet-mapping>
-
-
-    <servlet>
-        <servlet-name>computer</servlet-name>
-        <servlet-class>handle.data.Example7_1_Servlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>computer</servlet-name>
-        <url-pattern>/computer</url-pattern>
-    </servlet-mapping>
-
-
-    <servlet>
-        <servlet-name>query</servlet-name>
-        <servlet-class>handle.data.Query_Servlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>query</servlet-name>
-        <url-pattern>/query</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<web-app>
+    <!--  以下是web.xml文件新添加的内容 -->
+  <servlet> 
+      <servlet-name>registerServlet</servlet-name>
+      <servlet-class>handle.data.HandleRegister</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>registerServlet</servlet-name>
+      <url-pattern>/registerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+      <servlet-name>loginServlet</servlet-name>
+      <servlet-class>handle.data.HandleLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>loginServlet</servlet-name>
+      <url-pattern>/loginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
         <servlet-name>upFile</servlet-name>
-        <servlet-class>handle.data.Example9_4_Servlet</servlet-class>
+        <servlet-class>handle.data.UpFile</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>upFile</servlet-name>
         <url-pattern>/upFile</url-pattern>
     </servlet-mapping>
-
-
-
-
-    <servlet>
-        <servlet-name>loadFile</servlet-name>
-        <servlet-class>handle.data.Example9_5_Servlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>loadFile</servlet-name>
-        <url-pattern>/loadFile</url-pattern>
-    </servlet-mapping>
-
-
-
-    <servlet>
-        <servlet-name>handleFile</servlet-name>
-        <servlet-class>handle.data.Example9_2_Servlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>handleFile</servlet-name>
-        <url-pattern>/handleFile</url-pattern>
-    </servlet-mapping>
-
-
-
-    <servlet>
-        <servlet-name>readFile</servlet-name>
-        <servlet-class>handle.data.ReadFile_Servlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>readFile </servlet-name>
-        <url-pattern>/readFile </url-pattern>
-    </servlet-mapping>
-
-
-
-
-
 </web-app>
