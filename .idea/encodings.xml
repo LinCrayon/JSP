@@ -2,6 +2,16 @@
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Exercise/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Exercise/src/main/java/handle/data/Example7_1_Servlet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Exercise/src/main/java/handle/data/ExpressWish_Servlet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Exercise/src/main/java/save/data/ExpressWish.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Exercise/src/main/java/save/data/ExpressWish_Bean.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Exercise/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Exercise/web/example7_1.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Exercise/web/example7_2.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Exercise/web/example7_2_delete.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Exercise/web/example7_2_show.jsp" charset="GBK" />
     <file url="file://$PROJECT_DIR$/JDBC/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/JDBC/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/JDBC/web" charset="UTF-8" />
@@ -15,7 +25,6 @@
     <file url="file://$PROJECT_DIR$/SpringMVC/src/main/java/handle/data/Encrypt.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/SpringMVC/src/main/java/handle/data/Example7_1_Servlet.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/SpringMVC/src/main/java/handle/data/Example9_4_Servlet.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/SpringMVC/src/main/java/handle/data/HandleLogin.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/SpringMVC/src/main/java/handle/data/HandleRegister.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/SpringMVC/src/main/java/handle/data/Query_Servlet.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/SpringMVC/src/main/java/handle/data/Register.java" charset="GBK" />

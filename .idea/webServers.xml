@@ -9,6 +9,13 @@
           </advancedOptions>
         </fileTransfer>
       </webServer>
+      <webServer id="1089256b-1e7f-43d1-a0e0-3d9fc3275bca" name="aliyun">
+        <fileTransfer accessType="SFTP" host="121.43.177.234" port="22" sshConfigId="10a600e3-4bea-47cd-a571-aef11dbb4207" sshConfig="aliyun服务器">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>

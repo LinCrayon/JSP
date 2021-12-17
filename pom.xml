@@ -15,6 +15,7 @@
       <module>JDBC</module>
       <module>JSP </module>
       <module>SpringMVC</module>
+      <module>Exercise</module>
   </modules>
 
 

@@ -7,15 +7,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Exercise" />
+        <module name="JSP" />
         <module name="MyBatis" />
         <module name="JDBC" />
         <module name="SpringMVC" />
         <module name="SpringBoot" />
         <module name="redis" />
-        <module name="JSP" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Exercise" target="8" />
       <module name="javaweb" target="1.7" />
       <module name="JDBC" target="8" />
       <module name="JSP" target="1.7" />
