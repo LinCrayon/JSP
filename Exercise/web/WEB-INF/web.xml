@@ -33,4 +33,31 @@
     </servlet-mapping>
 
 
+<!--    小星星-->
+    <servlet>
+        <servlet-name>registerServlet</servlet-name>
+        <servlet-class>handle.data.HandleRegister</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>registerServlet</servlet-name>
+        <url-pattern>/registerServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>loginServlet</servlet-name>
+        <servlet-class>handle.data.HandleLogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>loginServlet</servlet-name>
+        <url-pattern>/loginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>upFile</servlet-name>
+        <servlet-class>handle.data.UpFile</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>upFile</servlet-name>
+        <url-pattern>/upFile</url-pattern>
+    </servlet-mapping>
+
+
 </web-app>
