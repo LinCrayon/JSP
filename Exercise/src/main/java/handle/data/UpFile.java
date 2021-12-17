@@ -53,6 +53,7 @@ public class UpFile extends HttpServlet{
             File dir=new File(tomcatDir+"/webapps/"+webDir+"/image");
             dir.mkdir();//建立目录。
             File fileTemp=new File(dir,tempFileName);
+            System.out.println(dir + "===" + tempFileName);
             RandomAccessFile randomWrite = new RandomAccessFile(fileTemp,"rw");
             InputStream in=request.getInputStream();
             byte b[]=new byte[10000];

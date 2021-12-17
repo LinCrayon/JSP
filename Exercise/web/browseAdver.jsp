@@ -22,7 +22,7 @@
     try{
         con = ds.getConnection();//使用连接池中的连接。
         sql=con.createStatement();
-        String SQL = "SELECT logname FROM user";//SQL语句。
+        String SQL = "SELECT logname FROM userk";//SQL语句。
         rs=sql.executeQuery(SQL);//查表。
         while(rs.next()) {
             String logname = rs.getString(1);
