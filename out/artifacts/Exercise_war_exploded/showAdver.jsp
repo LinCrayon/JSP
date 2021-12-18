@@ -5,7 +5,7 @@
 <title>浏览广告图</title>
 <style>
     #textStyle{
-        font-family:宋体;font-size:16;color:blue
+        font-family:宋体;color:blue
     }
 </style>
 <% request.setCharacterEncoding("utf-8");
@@ -22,7 +22,7 @@
 </p><br><%=play.logname%>的广告：<br>
 <image src =
                image/<jsp:getProperty name="play"
-       property="showImage"/> width =300 height =200></image><br>
+       property="showImage"/> width=300 height =200></image><br>
 <a href ="?index=<%=play.getIndex()+1 %>&logname=<%= play.logname %>">下一张</a>
 <a href ="?index=<%=play.getIndex()-1 %>&logname=<%= play.logname %>">上一张</a>
-</body><center></HTML>
+</body><div style="text-align: center;"></HTML>

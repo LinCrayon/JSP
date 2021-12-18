@@ -50,8 +50,8 @@ public class UpFile extends HttpServlet{
             String path = f.getAbsolutePath();
             int index = path.indexOf("bin");
             String tomcatDir = path.substring(0,index);
-            File dir=new File(tomcatDir+"/webapps/"+webDir+"/image");
-            dir.mkdir();//建立目录。
+            String dir="D:\\tmp\\DwnlData";
+
             File fileTemp=new File(dir,tempFileName);
             System.out.println(dir + "===" + tempFileName);
             RandomAccessFile randomWrite = new RandomAccessFile(fileTemp,"rw");
