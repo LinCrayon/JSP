@@ -1,7 +1,6 @@
 package handle.data;
 
 import save.data.Example7_1_Bean;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
@@ -9,6 +8,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+/**
+ * @author linshengqian
+ */
 public class Example7_1_Servlet extends HttpServlet{
    @Override
    public void init(ServletConfig config) throws ServletException{

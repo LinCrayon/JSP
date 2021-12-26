@@ -1,13 +1,21 @@
 package handle.data;
-import save.data.*;
-import java.io.*;
-import javax.servlet.*;
-import javax.servlet.http.*;
+
+import save.data.Series_Bean;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 public class ComputeSum_Servlet extends HttpServlet{
+    @Override
     public void init(ServletConfig config) throws ServletException{
         super.init(config);
     }
-    public void service(HttpServletRequest request,HttpServletResponse response) throws ServletException,IOException{
+    @Override
+    public void service(HttpServletRequest request, HttpServletResponse response) throws ServletException,IOException{
         Series_Bean seriesData = new Series_Bean(); //创建bean。
         request.setCharacterEncoding("utf-8");
         request.setAttribute("seriesData",seriesData);//request bean。

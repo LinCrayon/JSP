@@ -5,7 +5,7 @@
 <title>浏览广告图</title>
 <style>
     #textStyle{
-        font-family:宋体;color:blue
+        font-family:宋体;font-size:16;color:blue
     }
 </style>
 <% request.setCharacterEncoding("utf-8");
@@ -18,10 +18,11 @@
 <jsp:setProperty  name="play" property="logname" value="<%= logname %>"/>
 <jsp:setProperty  name="play" property="webDir" value="<%= webDir %>"/>
 <jsp:setProperty  name="play" property="index"  param = "index" />
-<HTML><center><body ><p id=textStyle>
+<HTML><center><body bgcolor=pink><p id=textStyle>
 </p><br><%=play.logname%>的广告：<br>
-<image src =image/<jsp:getProperty name="play"
+<image src =
+               image/<jsp:getProperty name="play"
        property="showImage"/> width=300 height =200></image><br>
 <a href ="?index=<%=play.getIndex()+1 %>&logname=<%= play.logname %>">下一张</a>
 <a href ="?index=<%=play.getIndex()-1 %>&logname=<%= play.logname %>">上一张</a>
-</body><div style="text-align: center;"></HTML>
+</body><center></HTML>
